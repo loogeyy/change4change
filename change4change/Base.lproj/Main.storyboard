@@ -252,6 +252,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Donate!"/>
                                 <connections>
+                                    <action selector="donateTapped:" destination="7Bk-4f-wYD" eventType="touchUpInside" id="wBs-gW-HWl"/>
                                     <segue destination="5ws-fr-1ed" kind="show" id="aaT-RG-kXC"/>
                                 </connections>
                             </button>
