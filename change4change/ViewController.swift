@@ -15,5 +15,6 @@ class ViewController: UIViewController {
     }
 
 var hi = "hello"
+var hello="hi safia"
 }
 
