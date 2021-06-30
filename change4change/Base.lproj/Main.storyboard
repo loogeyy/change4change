@@ -161,8 +161,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wH-bY-RQK">
-                                <rect key="frame" x="185" y="217" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$20.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wH-bY-RQK">
+                                <rect key="frame" x="185" y="217" width="55" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -181,6 +181,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Epa-JX-yFJ"/>
+                    <connections>
+                        <outlet property="balance" destination="4wH-bY-RQK" id="Cob-Aj-6c9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhd-bu-680" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,7 +217,7 @@
                                 <state key="normal" title="Donate!"/>
                                 <connections>
                                     <action selector="donateTapped:" destination="7Bk-4f-wYD" eventType="touchUpInside" id="wBs-gW-HWl"/>
-                                    <segue destination="5ws-fr-1ed" kind="show" id="aaT-RG-kXC"/>
+                                    <segue destination="5ws-fr-1ed" kind="show" identifier="segue" id="aaT-RG-kXC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SY-D5-o7d">
@@ -237,7 +240,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Nwq-Uq-7TE"/>
+        <segue reference="rAw-hh-eLO"/>
         <segue reference="UEU-Md-bEb"/>
     </inferredMetricsTieBreakers>
     <resources>
