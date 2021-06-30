@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHANGE4CHANGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wow-px-ybW">
-                                <rect key="frame" x="46" y="167" width="323" height="43"/>
+                                <rect key="frame" x="46" y="213" width="323" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="36"/>
                                 <color key="textColor" red="0.011457515010776322" green="0.21652553198746585" blue="0.82498816287878785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -26,7 +26,7 @@
                                 <size key="shadowOffset" width="3" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="six-BT-nPJ">
-                                <rect key="frame" x="88" y="420" width="239" height="42"/>
+                                <rect key="frame" x="88" y="466" width="239" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
                                 <state key="normal" title="View Organizations">
@@ -37,11 +37,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" highlightedImage="back2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oQ8-el-DPv">
-                                <rect key="frame" x="87" y="233" width="240" height="128"/>
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNo-0A-U0t">
-                                <rect key="frame" x="104" y="506" width="206" height="42"/>
+                                <rect key="frame" x="104" y="552" width="206" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
                                 <state key="normal" title="View My Balance">
@@ -278,8 +278,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="YnO-v4-Aip"/>
-        <segue reference="rAw-hh-eLO"/>
-        <segue reference="KhK-6M-Q3i"/>
+        <segue reference="Nwq-Uq-7TE"/>
+        <segue reference="Qcx-Kc-1ng"/>
         <segue reference="OVF-et-hPe"/>
     </inferredMetricsTieBreakers>
     <resources>
