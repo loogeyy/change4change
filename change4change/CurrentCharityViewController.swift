@@ -14,7 +14,7 @@ class CurrentCharityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg5")!)  
         // Do any additional setup after loading the view.
     }
     

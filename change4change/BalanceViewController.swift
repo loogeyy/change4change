@@ -21,7 +21,7 @@ class BalanceViewController: UIViewController {
        
         super.viewDidLoad()
         balance.text=labelText
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg6")!)
         /* uncomment this - Erin
         if (currentBalance == "$0.00") { balance.text = currentBalance2 }        // Do any additional setup after loading the view. */
     }
