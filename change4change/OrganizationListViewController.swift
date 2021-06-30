@@ -45,7 +45,8 @@ class OrganizationListViewController: UIViewController, UITableViewDelegate, UIT
     func rowButtonWasTapped(sender:UIButton){
         let rowIndex:Int=sender.tag
         print(rowIndex)
-        
+        var orgName = organizationNames[rowIndex]
+        print(orgName)
     }
     
     

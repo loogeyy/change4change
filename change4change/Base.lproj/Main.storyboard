@@ -107,7 +107,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozq-Ok-zBD">
-                                                    <rect key="frame" x="222" y="60" width="193" height="30"/>
+                                                    <rect key="frame" x="188" y="59" width="206" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="15"/>
                                                     <state key="normal" title="Select as my Organization"/>

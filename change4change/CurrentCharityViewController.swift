@@ -10,7 +10,7 @@ import UIKit
 
 class CurrentCharityViewController: UIViewController {
     
-    var currentBalance = 0.00
+    var currentBalance = 20.00
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class CurrentCharityViewController: UIViewController {
     }
     
     @IBAction func donateTapped(_ sender: AnyObject) {
-        var currentBalance = currentBalance-currentBalance
+       currentBalance = currentBalance-currentBalance
         
         
     }
@@ -33,12 +33,7 @@ class CurrentCharityViewController: UIViewController {
         
     }
     
-/* uncomment this -Erin
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let theDestination = (segue.destination as! BalanceViewController)
-        theDestination.currentBalance2 = currentBalance
-    }
-*/
+
         
     }
     

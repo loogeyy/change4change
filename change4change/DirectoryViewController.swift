@@ -11,7 +11,8 @@ class DirectoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!)                // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!)
+        // Do any additional setup after loading the view.
     }
     
 
