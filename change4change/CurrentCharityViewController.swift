@@ -14,22 +14,20 @@ class CurrentCharityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg5")!)  
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg7")!)
         // Do any additional setup after loading the view.
     }
     
     @IBAction func donateTapped(_ sender: AnyObject) {
         var currentBalance = currentBalance-currentBalance
-        /* uncomment this -Erin
-        self.performSegue(withIdentifier: "charityToBalance", sender: currentBalance)
-    */
+        
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue" {
             let destinationController=segue.destination as! BalanceViewController
-            destinationController.labelText="$\(currentBalance)"
+            destinationController.labelText="$\(currentBalance)0"
             
         }
         

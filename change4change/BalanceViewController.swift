@@ -14,16 +14,13 @@ class BalanceViewController: UIViewController {
     @IBOutlet weak var balance: UILabel!
     
     var labelText = "$20.00"
-   // var currentBalance: String?
-   // var currentBalance2:String = ""
-
+   
     override func viewDidLoad() {
        
         super.viewDidLoad()
         balance.text=labelText
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg6")!)
-        /* uncomment this - Erin
-        if (currentBalance == "$0.00") { balance.text = currentBalance2 }        // Do any additional setup after loading the view. */
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg5")!)
+        
     }
     
 
