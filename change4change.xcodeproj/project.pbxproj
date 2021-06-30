@@ -20,6 +20,7 @@
 		A8E6D568268B9C77001CB51D /* OrganizationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6D567268B9C77001CB51D /* OrganizationListViewController.swift */; };
 		A8E6D56A268B9C86001CB51D /* CurrentCharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6D569268B9C86001CB51D /* CurrentCharityViewController.swift */; };
 		A8E6D56C268B9C93001CB51D /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6D56B268B9C93001CB51D /* BalanceViewController.swift */; };
+		A8E6D56E268BAF81001CB51D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6D56D268BAF81001CB51D /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A8E6D567268B9C77001CB51D /* OrganizationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationListViewController.swift; sourceTree = "<group>"; };
 		A8E6D569268B9C86001CB51D /* CurrentCharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCharityViewController.swift; sourceTree = "<group>"; };
 		A8E6D56B268B9C93001CB51D /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		A8E6D56D268BAF81001CB51D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				A8E6D540268B982C001CB51D /* LaunchScreen.storyboard */,
 				A8E6D543268B982C001CB51D /* Info.plist */,
 				A8E6D53B268B982A001CB51D /* change4change.xcdatamodeld */,
+				A8E6D56D268BAF81001CB51D /* CustomTableViewCell.swift */,
 			);
 			path = change4change;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E6D56E268BAF81001CB51D /* CustomTableViewCell.swift in Sources */,
 				A8E6D537268B982A001CB51D /* ViewController.swift in Sources */,
 				A8E6D533268B982A001CB51D /* AppDelegate.swift in Sources */,
 				A8E6D53D268B982A001CB51D /* change4change.xcdatamodeld in Sources */,
