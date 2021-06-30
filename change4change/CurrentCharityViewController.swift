@@ -10,11 +10,14 @@ import UIKit
 
 class CurrentCharityViewController: UIViewController {
     
+    @IBOutlet weak var charityName: UILabel!
     var currentBalance = 20.00
-    
+    var orgName = "None selected yet!"
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg7")!)
+        charityName.text=orgName
         // Do any additional setup after loading the view.
     }
     

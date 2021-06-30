@@ -70,15 +70,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GS-kO-MYn">
-                                <rect key="frame" x="26" y="0.0" width="34" height="30"/>
+                                <rect key="frame" x="23" y="1" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Home"/>
                                 <connections>
                                     <segue destination="AfH-GC-S8B" kind="show" id="OVF-et-hPe"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gZk-87-L5h">
-                                <rect key="frame" x="0.0" y="38" width="414" height="777"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gZk-87-L5h">
+                                <rect key="frame" x="0.0" y="38" width="414" height="770"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" rowHeight="100" id="WtM-tt-YZR" customClass="CustomTableViewCell" customModule="change4change" customModuleProvider="target">
@@ -128,18 +129,17 @@
                                     <outlet property="delegate" destination="pRA-Zc-aUp" id="5W5-Su-0MA"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shJ-29-b0X">
+                                <rect key="frame" x="241" y="3" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to my Organization"/>
+                                <connections>
+                                    <segue destination="7Bk-4f-wYD" kind="show" identifier="setOrg" id="YnO-v4-Aip"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0uc-aE-6hz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="gZk-87-L5h" firstAttribute="leading" secondItem="0uc-aE-6hz" secondAttribute="leading" id="2td-5b-oMs"/>
-                            <constraint firstItem="gZk-87-L5h" firstAttribute="top" secondItem="0uc-aE-6hz" secondAttribute="top" id="Stj-4I-cwZ"/>
-                            <constraint firstItem="0uc-aE-6hz" firstAttribute="bottom" secondItem="gZk-87-L5h" secondAttribute="bottom" id="YV7-lP-TMZ"/>
-                            <constraint firstItem="0uc-aE-6hz" firstAttribute="trailing" secondItem="gZk-87-L5h" secondAttribute="trailing" id="eee-gZ-fCd"/>
-                            <constraint firstItem="gZk-87-L5h" firstAttribute="top" secondItem="0uc-aE-6hz" secondAttribute="top" constant="20" id="h0k-Nf-h5p"/>
-                            <constraint firstItem="gZk-87-L5h" firstAttribute="top" secondItem="0uc-aE-6hz" secondAttribute="top" constant="10" id="t80-LG-ioM"/>
-                            <constraint firstItem="0uc-aE-6hz" firstAttribute="bottom" secondItem="gZk-87-L5h" secondAttribute="bottom" id="wxF-OB-O8r"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i1R-RF-osJ"/>
                 </viewController>
@@ -172,9 +172,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbs-mF-Y8W">
-                                <rect key="frame" x="26" y="20" width="34" height="30"/>
+                                <rect key="frame" x="23" y="20" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Home"/>
                                 <connections>
                                     <segue destination="AfH-GC-S8B" kind="show" id="UEU-Md-bEb"/>
                                 </connections>
@@ -222,9 +222,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SY-D5-o7d">
-                                <rect key="frame" x="20" y="20" width="34" height="32"/>
+                                <rect key="frame" x="0.0" y="20" width="122" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Home"/>
                                 <connections>
                                     <segue destination="5ws-fr-1ed" kind="show" id="rAw-hh-eLO"/>
                                 </connections>
@@ -247,11 +247,22 @@
                                 <rect key="frame" x="151" y="269" width="113" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oks-Yh-1ls">
+                                <rect key="frame" x="123" y="766" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change my Organization"/>
+                                <connections>
+                                    <segue destination="pRA-Zc-aUp" kind="show" id="KhK-6M-Q3i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oZZ-I3-FnU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="RTQ-do-7Rs"/>
+                    <connections>
+                        <outlet property="charityName" destination="dTs-yG-12e" id="HTG-PA-Mrq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMR-2l-mUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,7 +270,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Nwq-Uq-7TE"/>
+        <segue reference="YnO-v4-Aip"/>
+        <segue reference="rAw-hh-eLO"/>
+        <segue reference="KhK-6M-Q3i"/>
         <segue reference="OVF-et-hPe"/>
     </inferredMetricsTieBreakers>
     <resources>

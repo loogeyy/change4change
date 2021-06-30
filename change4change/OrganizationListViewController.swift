@@ -14,9 +14,11 @@ class OrganizationListViewController: UIViewController, UITableViewDelegate, UIT
     
     let organizationDescriptions = ["description1", "description2", "desription 3"]
     
+    
+    
     override func viewDidLoad() {
             super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg2")!)  
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg3")!)  
             // Do any additional setup after loading the view.
         }
     
@@ -41,16 +43,26 @@ class OrganizationListViewController: UIViewController, UITableViewDelegate, UIT
         return cell
     }
     
+    var selectedOrg = "None"
     @objc
-    func rowButtonWasTapped(sender:UIButton){
+    
+    func rowButtonWasTapped(sender:UIButton) -> String{
         let rowIndex:Int=sender.tag
         print(rowIndex)
-        var orgName = organizationNames[rowIndex]
-        print(orgName)
+        selectedOrg = organizationNames[rowIndex]
+        return selectedOrg
+        
     }
     
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if segue.identifier == "setOrg" {
+            let destinationController=segue.destination as! CurrentCharityViewController
+            destinationController.orgName=selectedOrg
+          
+        }
+        
+    }
     
 
     
@@ -65,5 +77,6 @@ class OrganizationListViewController: UIViewController, UITableViewDelegate, UIT
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
