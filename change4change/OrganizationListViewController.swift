@@ -10,11 +10,21 @@ import UIKit
 class OrganizationListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //REPLACE PLACEHOLDERS WITH ACTUAL CHARITY NAMES
-    let organizationNames = ["Doctors Without Borders", "Human Rights Watch", "Room to Read", "Conservation International", "The Bail Room", "Save the Children", "GiveDirectly", "Water.org", "Educate!"]
+    let organizationNames = ["Doctors Without Borders", "Human Rights Watch", "Room to Read", "Conservation International", "The Bail Project", "Save the Children", "GiveDirectly", "Water.org", "Educate!"]
     
     let organizationDescriptions = ["An independent, global movement providing medical aid where it’s needed most.", "An independent, international organization that defends the rights of people worldwide", "Creating a future in which all the world's children can pursue a quality education", "Because saving nature is the only way to save ourselves", "Combatting mass incarceration by disrupting the money bail system—one person at a time", "Giving the world's children a healthy start, an opportunity to learn, and protection from harm", "Offers a simple approach to addressing poverty: cut out intermediaries and allow poor families to decide for themselves what they need most.", "Provides safe water and sanitation solutions that give communities health, hope, and a future","Preparing youth in Africa with the skills to succeed in today's economy"]
     
-    let organizationImage = ["h","a","a"]
+    var images: [UIImage] = [
+            UIImage.init(named: "doctor")!,
+            UIImage.init(named: "human")!,
+            UIImage.init(named: "read")!,
+            UIImage.init(named: "conservation")!,
+            UIImage.init(named: "bail")!,
+            UIImage.init(named: "children")!,
+            UIImage.init(named: "give")!,
+            UIImage.init(named: "water")!,
+            UIImage.init(named: "education")!,
+        ]
     
     override func viewDidLoad() {
             super.viewDidLoad()
@@ -35,6 +45,7 @@ class OrganizationListViewController: UIViewController, UITableViewDelegate, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
         
         cell.mainLabel.text = organizationNames[indexPath.row]
+        cell.OrgImageView.image = images[indexPath.row]
         cell.descriptionLabel.text=organizationDescriptions[indexPath.row]
         cell.selectButton.tag=indexPath.row
         cell.selectButton.addTarget(self, action: #selector(rowButtonWasTapped(sender:)), for: .touchUpInside)
