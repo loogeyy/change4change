@@ -10,11 +10,11 @@ import UIKit
 class OrganizationListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //REPLACE PLACEHOLDERS WITH ACTUAL CHARITY NAMES
-    let organizationNames = ["name1", "name2", "name3"]
+    let organizationNames = ["Doctors Without Borders", "Human Rights Watch", "Room to Read", "Conservation International", "The Bail Room", "Save the Children", "GiveDirectly", "Water.org", "Educate!"]
     
-    let organizationDescriptions = ["description1", "description2", "desription 3"]
+    let organizationDescriptions = ["An independent, global movement providing medical aid where it’s needed most.", "An independent, international organization that defends the rights of people worldwide", "Creating a future in which all the world's children can pursue a quality education", "Because saving nature is the only way to save ourselves", "Combatting mass incarceration by disrupting the money bail system—one person at a time", "Giving the world's children a healthy start, an opportunity to learn, and protection from harm", "Offers a simple approach to addressing poverty: cut out intermediaries and allow poor families to decide for themselves what they need most.", "Provides safe water and sanitation solutions that give communities health, hope, and a future","Preparing youth in Africa with the skills to succeed in today's economy"]
     
-    
+    let organizationImage = ["h","a","a"]
     
     override func viewDidLoad() {
             super.viewDidLoad()
