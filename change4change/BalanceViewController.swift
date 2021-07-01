@@ -21,10 +21,13 @@ class BalanceViewController: UIViewController {
         super.viewDidLoad()
         balance.text=labelText
         donation.text=donationAmount
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg5")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!)
+     
+        
         
     }
     
+  
 
     /*
     // MARK: - Navigation
