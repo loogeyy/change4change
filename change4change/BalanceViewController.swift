@@ -12,13 +12,15 @@ class BalanceViewController: UIViewController {
     let vc = CurrentCharityViewController()
     
     @IBOutlet weak var balance: UILabel!
+    @IBOutlet weak var donation: UILabel!
     
     var labelText = "$20.00"
-   
+    var donationAmount = "You've donated $0.00 so far!"
     override func viewDidLoad() {
        
         super.viewDidLoad()
         balance.text=labelText
+        donation.text=donationAmount
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg5")!)
         
     }

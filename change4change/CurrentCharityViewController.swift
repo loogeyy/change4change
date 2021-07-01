@@ -12,6 +12,7 @@ class CurrentCharityViewController: UIViewController {
     
     @IBOutlet weak var charityName: UILabel!
     var currentBalance = 20.00
+    var originalBalance = 20.00
     var orgName = "None selected yet!"
   
     override func viewDidLoad() {
@@ -31,6 +32,7 @@ class CurrentCharityViewController: UIViewController {
         if segue.identifier == "segue" {
             let destinationController=segue.destination as! BalanceViewController
             destinationController.labelText="$\(currentBalance)0"
+            destinationController.donationAmount="You've donated $\(originalBalance)0 so far!"
             
         }
         

@@ -51,11 +51,18 @@
                                     <segue destination="5ws-fr-1ed" kind="show" id="Nwq-Uq-7TE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Cents makes change and change makes cents.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-ZF-yPX">
-                                <rect key="frame" x="33" y="257" width="349" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Cents make change and change makes cents.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-ZF-yPX">
+                                <rect key="frame" x="37" y="257" width="342" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="0.36915437693481729" green="0.58285984848484851" blue="0.18819980733913944" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Made with ♡ by Tessa, Lucy &amp; Safia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqz-hV-uI7">
+                                <rect key="frame" x="113" y="805" width="189" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -118,7 +125,9 @@
                                                     <rect key="frame" x="325" y="35" width="89" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="15"/>
-                                                    <state key="normal" title="Select"/>
+                                                    <state key="normal" title="Select">
+                                                        <color key="titleColor" red="0.36915437690000003" green="0.58285984850000006" blue="0.18819980729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </state>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -153,7 +162,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0uc-aE-6hz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.7019608021" green="0.85882353779999998" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="i1R-RF-osJ"/>
                 </viewController>
@@ -204,6 +213,13 @@
                                 <rect key="frame" x="151" y="53" width="113" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've donated $0.00 so far!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-gp-0DW">
+                                <rect key="frame" x="15" y="743" width="391" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3eQ-FE-NKc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -211,11 +227,12 @@
                     <navigationItem key="navigationItem" id="Epa-JX-yFJ"/>
                     <connections>
                         <outlet property="balance" destination="4wH-bY-RQK" id="Cob-Aj-6c9"/>
+                        <outlet property="donation" destination="5mp-gp-0DW" id="8O7-pH-Or2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhd-bu-680" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1571" y="562"/>
+            <point key="canvasLocation" x="1569.5652173913045" y="561.83035714285711"/>
         </scene>
         <!--Current Charity View Controller-->
         <scene sceneID="apB-HN-xCR">
@@ -284,10 +301,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YnO-v4-Aip"/>
+        <segue reference="C3U-up-2Ro"/>
         <segue reference="Nwq-Uq-7TE"/>
         <segue reference="Qcx-Kc-1ng"/>
-        <segue reference="OVF-et-hPe"/>
+        <segue reference="UEU-Md-bEb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="back2.jpg" width="1920" height="1358"/>

@@ -28,7 +28,7 @@ class OrganizationListViewController: UIViewController, UITableViewDelegate, UIT
     
     override func viewDidLoad() {
             super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg3")!)  
+            self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!)
             // Do any additional setup after loading the view.
         }
     
