@@ -24,6 +24,7 @@ class OrganizationListViewController: UIViewController, UITableViewDelegate, UIT
             UIImage.init(named: "give")!,
             UIImage.init(named: "water")!,
             UIImage.init(named: "education")!,
+            UIImage.init(named: "love")!,
         ]
     
     override func viewDidLoad() {
